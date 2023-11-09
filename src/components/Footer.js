@@ -40,15 +40,6 @@ function Footer() {
             <li>Defi</li>
           </ul>
         </div>
-        <div className=''>
-          <h3 className='border-b inline-block border-[#00d8ff] mt-4 text-xl font-bold'>Products</h3>
-          <ul>
-            <li>App</li>
-            <li>Analytics</li>
-            <li>Token</li>
-            <li>Defi</li>
-          </ul>
-        </div>
       </div>
     </div>
   )
