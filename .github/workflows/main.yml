@@ -1,0 +1,19 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - decentralised-firestore
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Deploy to Firebase Hosting
+        uses: firebase/actions-deploy@v1
+        with:
+          token: ${{ secrets.FIREBASE_TOKEN }}
+          project_id: ${{ secrets.FIREBASE_PROJECT_ID }}
